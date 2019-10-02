@@ -12,12 +12,12 @@ h1 {
 
 h2 {
   color: white;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 h3 {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .container {
@@ -40,7 +40,8 @@ header nav {
 header nav a {
   color: white;
   text-decoration: none;
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
+  padding: 6px 15px;
   transition: 0.3s;
   font-weight: 600;
   display: none;
@@ -49,19 +50,23 @@ header nav a {
 
 header nav a:hover {
   background: rgba(255, 255, 255, 0.1);
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
+  /* padding: 15px; */
+  padding: 6px 15px;
   border-radius: 5px;
 }
 
 header nav a:active {
   background: white;
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
+  /* padding: 15px; */
+  padding: px 15px;
   border-radius: 5px;
   color: #0f50b4;
 }
 
 .btn {
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 5px;
   padding: 5px 10px;
   margin-left: 20px;
@@ -73,7 +78,7 @@ header nav a:active {
 }
 
 .btn:hover {
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 5px;
   padding: 5px 10px;
   margin-left: 20px;
@@ -97,7 +102,7 @@ header nav a:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 15px 0 50px 0;
+  margin: 5px 0 40px 0;
 }
 
 .big-news-image img {
@@ -128,6 +133,7 @@ header nav a:active {
 }
 
 .news-container div img {
+  position: relative;
   width: 100%;
   height: auto;
   border-radius: 6px;
@@ -135,6 +141,8 @@ header nav a:active {
   filter: grayscale(100%);
   border: 1px solid white;
   opacity: 0.4;
+  transition: 0.5s;
+  /* z-index: 4; */
 }
 
 .news-container div img:hover {
@@ -143,6 +151,7 @@ header nav a:active {
 
 .news-container div {
   position: relative;
+  /* z-index: 1; */
 }
 
 .news-container div h3 {
@@ -151,6 +160,7 @@ header nav a:active {
   left: 20px;
   color: white;
   margin-right: 20px;
+  /* z-index: 2; */
 }
 
 .news-container div p {
@@ -159,6 +169,7 @@ header nav a:active {
   left: 20px;
   color: white;
   font-size: 13px;
+  /* z-index: 3; */
 }
 
 /*** FOOTER ***/
@@ -187,7 +198,7 @@ footer p {
 footer nav a {
   color: white;
   text-decoration: none;
-  padding: 12px;
+  padding: 6px 15px;
   transition: 0.3s;
   font-weight: 600;
   margin-bottom: 0px;
@@ -195,13 +206,13 @@ footer nav a {
 
 footer nav a:hover {
   background: rgba(255, 255, 255, 0.1);
-  padding: 12px;
+  padding: 6px 15px;
   border-radius: 5px;
 }
 
 footer nav a:active {
   background: white;
-  padding: 12px;
+  padding: 6px 15px;
   border-radius: 5px;
   color: #0f50b4;
 }
@@ -216,6 +227,7 @@ footer nav a:active {
   color: rgba(255, 255, 255, 0.5);
   font-size: 20px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .social-media:hover {
@@ -360,7 +372,7 @@ footer nav a:active {
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    margin: 50px 0 50px 0;
+    margin: 20px 0 50px 0;
   }
 
   .big-news-headline {

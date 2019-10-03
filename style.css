@@ -41,28 +41,21 @@ header nav a {
   color: white;
   text-decoration: none;
   /* padding: 5px 10px; */
-  padding: 6px 15px;
+  padding: 6px 0px;
   transition: 0.3s;
   font-weight: 600;
   display: none;
-  margin-left: 20px;
+  margin-left: 35px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 
 header nav a:hover {
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); */
   /* padding: 5px 10px; */
   /* padding: 15px; */
-  padding: 6px 15px;
-  border-radius: 5px;
-}
-
-header nav a:active {
-  background: white;
-  /* padding: 5px 10px; */
-  /* padding: 15px; */
-  padding: px 15px;
-  border-radius: 5px;
-  color: #0f50b4;
+  padding: 6px 0px;
+  /* border-radius: 5px; */
+  border-bottom: 2px solid white;
 }
 
 .btn {
@@ -70,11 +63,16 @@ header nav a:active {
   border-radius: 5px;
   padding: 5px 10px;
   margin-left: 20px;
+  transition: 0.2s;
   background-color: rgba(255, 255, 255, 0);
   color: white;
   font-weight: 600;
   display: none;
   cursor: pointer;
+}
+
+.btn:nth-of-type(1) {
+  margin-left: 40px;
 }
 
 .btn:hover {
@@ -84,6 +82,19 @@ header nav a:active {
   margin-left: 20px;
   background-color: rgba(255, 255, 255, 1);
   color: #0f50b4;
+}
+
+.btn:active {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.btn:hover:nth-of-type(1) {
+  margin-left: 40px;
 }
 
 .logo-item {
@@ -194,23 +205,16 @@ footer p {
 footer nav a {
   color: white;
   text-decoration: none;
-  padding: 6px 15px;
+  padding: 6px 0px;
   transition: 0.3s;
   font-weight: 600;
-  margin-bottom: 0px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  margin: 7px 0;
 }
 
 footer nav a:hover {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 6px 15px;
-  border-radius: 5px;
-}
-
-footer nav a:active {
-  background: white;
-  padding: 6px 15px;
-  border-radius: 5px;
-  color: #0f50b4;
+  padding: 6px 0px;
+  border-bottom: 2px solid white;
 }
 
 .social-media-container {
@@ -273,7 +277,7 @@ footer nav a:active {
   }
 
   .logo-item {
-    margin-left: 20px;
+    margin-left: 37px;
     margin-right: 0px;
   }
 
@@ -321,6 +325,10 @@ footer nav a:active {
   footer nav {
     flex-direction: row;
     align-items: flex-start;
+  }
+
+  footer nav a {
+    margin-right: 35px;
   }
 
   footer p {

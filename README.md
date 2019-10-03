@@ -9,3 +9,12 @@ In this week´s project I created a fictitious magazine site for aviation. The s
 - How to structure webpages using box model.
 - Layout webpages using flexbox.
 - Create responsive webpages for mobile, desktop and tablet.
+
+### Technologies used in this project
+
+- HTML
+- CSS
+
+### Copyright
+
+&copy; Fredrik Tibbling 2019

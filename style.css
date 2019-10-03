@@ -1,34 +1,49 @@
 body {
   background: #0f50b4;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+header,
+a,
+a:visited,
+.btn {
+  color: white;
 }
 
 h1 {
-  color: white;
   font-size: 30px;
 }
 
 h2 {
-  color: white;
-  font-size: 23px;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
 h3 {
-  color: white;
   font-size: 18px;
 }
 
 .container {
   margin: 0 auto;
   padding: 0 15px;
+  min-width: 390px;
+}
+
+.btn {
+  display: none;
 }
 
 /*** HEADER ***/
 
 header {
-  color: white;
   height: 80px;
 }
 
@@ -38,9 +53,7 @@ header nav {
 }
 
 header nav a {
-  color: white;
   text-decoration: none;
-  /* padding: 5px 10px; */
   padding: 6px 0px;
   transition: 0.3s;
   font-weight: 600;
@@ -50,51 +63,8 @@ header nav a {
 }
 
 header nav a:hover {
-  /* background: rgba(255, 255, 255, 0.1); */
-  /* padding: 5px 10px; */
-  /* padding: 15px; */
   padding: 6px 0px;
-  /* border-radius: 5px; */
   border-bottom: 2px solid white;
-}
-
-.btn {
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin-left: 20px;
-  transition: 0.2s;
-  background-color: rgba(255, 255, 255, 0);
-  color: white;
-  font-weight: 600;
-  display: none;
-  cursor: pointer;
-}
-
-.btn:nth-of-type(1) {
-  margin-left: 40px;
-}
-
-.btn:hover {
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin-left: 20px;
-  background-color: rgba(255, 255, 255, 1);
-  color: #0f50b4;
-}
-
-.btn:active {
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin-left: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: white;
-}
-
-.btn:hover:nth-of-type(1) {
-  margin-left: 40px;
 }
 
 .logo-item {
@@ -116,11 +86,19 @@ header nav a:hover {
   margin: 5px 0 40px 0;
 }
 
+.big-news-container:hover img {
+  /* opacity: 0.7; */
+  filter: grayscale(0%);
+  transition: filter 300ms ease-in;
+}
+
 .big-news-image img {
   width: 100%;
   height: auto;
   border-radius: 6px;
   filter: grayscale(100%);
+  border: 1px solid white;
+  transition: filter 300ms ease-in;
 }
 
 .big-news-headline {
@@ -149,10 +127,10 @@ header nav a:hover {
   height: auto;
   border-radius: 6px;
   margin-bottom: 10px;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   border: 1px solid white;
   opacity: 0.4;
-  transition: 0.5s;
+  transition: 2s;
 }
 
 .news-container div:hover img {
@@ -167,7 +145,6 @@ header nav a:hover {
   position: absolute;
   top: 0;
   left: 20px;
-  color: white;
   margin-right: 20px;
 }
 
@@ -175,7 +152,6 @@ header nav a:hover {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  color: white;
   font-size: 13px;
 }
 
@@ -195,7 +171,6 @@ footer nav {
 }
 
 footer p {
-  color: white;
   text-align: center;
   padding: 15px 0;
   font-size: 11px;
@@ -203,13 +178,12 @@ footer p {
 }
 
 footer nav a {
-  color: white;
   text-decoration: none;
   padding: 6px 0px;
   transition: 0.3s;
   font-weight: 600;
   border-bottom: 2px solid rgba(255, 255, 255, 0);
-  margin: 7px 0;
+  margin: 5px 0;
 }
 
 footer nav a:hover {
@@ -223,25 +197,23 @@ footer nav a:hover {
   padding-bottom: 15px;
 }
 
-.social-media {
+.social-media-icon {
   color: rgba(255, 255, 255, 0.5);
   font-size: 20px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.social-media:hover {
+.social-media-icon:hover {
   color: white;
 }
 
 /***************** MEDIA QUERIES *****************/
 
 /***** TABLET SIZE *****/
-@media (min-width: 668px) and (max-width: 1024px) {
-  h3 {
-    font-size: 20px;
-  }
 
+/* The media query is to limit the header style to tablet size only. */
+@media (min-width: 668px) and (max-width: 1024px) {
   /*** HEADER ***/
 
   header nav {
@@ -280,6 +252,16 @@ footer nav a:hover {
     margin-left: 37px;
     margin-right: 0px;
   }
+}
+
+@media (min-width: 668px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 13px;
+  }
 
   /*** BIG NEWS CONTAINER ***/
 
@@ -292,7 +274,7 @@ footer nav a:hover {
   .big-news-headline {
     display: inline-block;
     flex-basis: 49%;
-    padding: 00px;
+    padding: 40px;
   }
 
   .big-news-image {
@@ -302,7 +284,6 @@ footer nav a:hover {
   /*** NEWS CONTAINER ***/
 
   .news-container {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -318,7 +299,7 @@ footer nav a:hover {
     justify-content: flex-end;
   }
 
-  .social-media {
+  .social-media-icon {
     margin-left: 40px;
   }
 
@@ -338,12 +319,48 @@ footer nav a:hover {
 
 /***** DESKTOP SIZE *****/
 @media (min-width: 1025px) {
-  .btn {
-    display: inline-block;
+  h1 {
+    font-size: 30px;
   }
 
-  h3 {
-    font-size: 14px;
+  .btn {
+    display: inline-block;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 20px;
+    /* transition: 4s; */
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 300ms ease-in;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .btn:nth-of-type(1) {
+    margin-left: 35px;
+  }
+
+  .btn:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    color: #0f50b4;
+  }
+
+  .btn:hover:nth-of-type(1) {
+    margin-left: 35px;
+  }
+
+  .btn:active {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
   }
 
   .container {
@@ -373,17 +390,14 @@ footer nav a:hover {
   /*** BIG NEWS CONTAINER ***/
 
   .big-news-container {
-    flex-direction: row;
-    justify-content: space-between;
     align-items: stretch;
     margin: 20px 0 50px 0;
   }
 
   .big-news-headline {
-    display: inline-block;
-    flex-basis: 49%;
     flex-grow: 2;
     width: 50%;
+    padding: 20px 0 20px 30px;
   }
 
   .big-news-headline h1 {
@@ -410,7 +424,6 @@ footer nav a:hover {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    color: white;
     font-size: 10px;
   }
 

@@ -114,6 +114,19 @@ header nav a:hover {
   text-decoration: none;
 }
 
+/* .fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
 /*** NEWS CONTAINER ***/
 
 .news-container {
@@ -130,7 +143,7 @@ header nav a:hover {
   /* filter: grayscale(100%); */
   border: 1px solid white;
   opacity: 0.4;
-  transition: 2s;
+  transition: opacity 200ms ease-in;
 }
 
 .news-container div:hover img {
@@ -330,9 +343,8 @@ footer nav a:hover {
     border-radius: 5px;
     padding: 5px 10px;
     margin-left: 20px;
-    /* transition: 4s; */
     background-color: rgba(255, 255, 255, 0);
-    transition: background-color 300ms ease-in;
+    transition: background-color 200ms ease-in;
     font-weight: 600;
     cursor: pointer;
   }

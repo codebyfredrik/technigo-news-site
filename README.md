@@ -17,4 +17,4 @@ In this week´s project I created a fictitious magazine site for aviation. The s
 
 ### Copyright
 
-&copy; Fredrik Tibbling 2019
+&copy; Fredrik Tibbling 2019f

@@ -1,8 +1,10 @@
-# Project 2 - Build a news site (Week 2)
+# Project 2 - News site (Week 2)
 
 ### Summary
 
-In this week´s project I created a fictitious magazine site for aviation. The site contains a header with a name of the site, a logo and a navbar. The navbar changes depending on if you visit the site from a mobile, tablet or desktop. Further the site has a big news section and a grid of cards with other news. On desktop sized screens, there are four cards in a row, two in a row on tablets, and on mobiles there are just one card on each row. At the end of the site there is also a footer.
+In this assigment (@ Technigo Boot Camp 2019/2020) I was given the task to create a news or magazine site. The site contains a header with a name of the site, a logo and a navbar. The navbar changes depending on if you visit the site from a mobile, tablet or desktop. Further the site has a big news section and a grid of cards with other news. On desktop sized screens, there are four cards in a row, two in a row on tablets, and on mobiles there are just one card on each row. At the end of the site there is also a footer.
+
+URL to live site: https://loving-wozniak-e72d0b.netlify.com/
 
 ### Learning objectives
 
@@ -10,11 +12,7 @@ In this week´s project I created a fictitious magazine site for aviation. The s
 - Layout webpages using flexbox.
 - Create responsive webpages for mobile, desktop and tablet.
 
-### Technologies used in this project
+### Technologies used
 
 - HTML
 - CSS
-
-### Copyright
-
-&copy; Fredrik Tibbling 2019

@@ -6,6 +6,8 @@ In this assigment (@ Technigo Boot Camp 2019/2020) I was given the task to creat
 
 ### 2. What did I do?
 
+[TEXT]
+
 ### 3. Technologies used
 
 - HTML

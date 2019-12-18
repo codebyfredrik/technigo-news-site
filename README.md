@@ -1,4 +1,4 @@
-# Project 2 - News site (Week 2)
+# Project 2 - News site
 
 ### What is this?
 
@@ -19,6 +19,6 @@ In this assigment (@ Technigo Boot Camp 2019/2020) I was given the task to creat
 - Layout webpages using flexbox.
 - Create responsive webpages for mobile, desktop and tablet.
 
-### Where can you see it in action?
+### Where can you see the site in action?
 
 URL to live site: https://loving-wozniak-e72d0b.netlify.com/

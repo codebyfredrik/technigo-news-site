@@ -1,12 +1,12 @@
 # Project 2 - News site
 
-### What is this?
+### Summary
 
 A news site created for a fictitious aviation magazine company.
 
-### What did I do?
+### Implementation details
 
-In this assigment (@ Technigo Boot Camp 2019/2020) I was given the task to create a news or magazine site. The site contains a header with a name of the site, a logo and a navbar. The navbar changes depending on if you visit the site from a mobile, tablet or desktop. Further the site has a big news section and a grid of cards with other news. On desktop sized screens, there are four cards in a row, two in a row on tablets, and on mobiles there are just one card on each row. At the end of the site there is also a footer.
+The site contains a header with the name of the site, a logo and a navbar. The navbar is displayed differently depending on if you visit the site from a mobile, tablet or desktop. Further the site has a big news section and a grid of cards with other news. On desktop sized screens, there are four cards in a row, two in a row on tablets, and on mobiles there are just one card on each row. At the end of the site there is also a footer.
 
 ### Technologies used
 

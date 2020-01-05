@@ -1,6 +1,6 @@
 body {
   background: #0f50b4;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -33,7 +33,6 @@ h3 {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  min-width: 390px;
 }
 
 .btn {
@@ -88,7 +87,6 @@ header nav a:hover {
 }
 
 .big-news-container:hover img {
-  /* opacity: 0.7; */
   filter: grayscale(0%);
   transition: filter 300ms ease-in;
 }
@@ -115,19 +113,6 @@ header nav a:hover {
   text-decoration: none;
 }
 
-/* .fade-in {
-  animation: fadeIn 1s ease forwards;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
-
 /*** NEWS CONTAINER ***/
 
 .news-container {
@@ -141,7 +126,6 @@ header nav a:hover {
   height: auto;
   border-radius: 6px;
   margin-bottom: 10px;
-  /* filter: grayscale(100%); */
   border: 1px solid white;
   opacity: 0.4;
   transition: opacity 200ms ease-in;

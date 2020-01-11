@@ -1,4 +1,4 @@
-# Project 2 - News site
+# News site
 
 ### Summary
 
@@ -12,12 +12,6 @@ The site contains a header with a logo and navbar. The navbar is displayed diffe
 
 - CSS
 - HTML
-
-### Learning objectives
-
-- How to structure webpages using box model.
-- Layout webpages using flexbox.
-- Create responsive webpages for mobile, desktop and tablet.
 
 ### Where can you see the site in action?
 
